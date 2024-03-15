@@ -1,0 +1,51 @@
+/* .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(17, 71, 17);
+}
+.element{
+    text-align: center;
+    position: absolute;
+    line-height: 10px;
+    transform: translate(50%, 50%) scale(0);
+}
+.element i,h2{
+    font-size: 10vw;
+    color: goldenrod;
+}
+.element.slide{
+    transform: translate(50%, 50%) scale(1);
+    
+} */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: beige;
+  }
+  .element {
+    text-align: center;
+    position: absolute;
+    line-height: 10px;
+    display: none;
+    /* transform: translate(-50%, -50%) scale(1); */
+    transition: transform 1s;
+  }
+  .element i,
+  h2 {
+    font-size: 10vw;
+    color: coral;
+  }
+
+  .element.slide{
+    display: contents;
+    transition: transform 1s;
+  }
+  /* .slideshow-element.current {
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0.6s;
+  } */
